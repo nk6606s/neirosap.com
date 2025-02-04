@@ -1,0 +1,1153 @@
+body, html {
+    font-family: 'Aventa', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*    box-sizing: border-box;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 32px 27px;
+}
+
+
+/* HEADER START */
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    /*
+    margin-top: 27.06px;
+    margin-left: 32px;
+    */
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.nav {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.nav-burger{
+    display: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #1A1C21;
+    padding: 0 15px;
+}
+
+.request-button {
+    margin-left: auto;
+}
+
+.request-button-2{
+    margin-top: 20px;
+}
+
+/* HEADER END */
+
+/* HOME START */
+
+.home-holder{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 128px;
+    margin-bottom: 200px;
+
+}
+
+.title{
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 108px;
+}
+
+.title span {
+    background: linear-gradient(259.94deg, #41E8FD 4.55%, #41BDFD 82%);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+    display: inline-block; /* Required for background-clip to work properly */
+    font-size: inherit; /* Ensure span inherits the same font size */
+}
+
+.sub-title{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.talents-holder {
+    position: relative;
+    width: 30%; /* Ensure the parent has a width */
+    height: auto; /* Allow the height to adjust based on content */
+}
+.talents-holder-mobile {
+    display: none;
+}
+
+.rectangle{
+    /*    background-color: bisque;*/
+    width: 1164px;
+    height: 798.67px;
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    left: 450px;
+    background-image: url(images/kletka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.talent-1{
+    position: absolute;
+    z-index: 999;
+    top: -160px;
+    left: 20px;
+    width: 70%;
+    height: auto;
+
+}
+
+.talent-2{
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    left: 370px;
+    width: 70%;
+    height: auto;
+
+}
+
+.talent-3{
+    position: absolute;
+    z-index: 999;
+    top: 415px;
+    left: -200px;
+    /*    width: 70%;*/
+    height: auto;
+}
+.frame-1{
+    position: absolute;
+    z-index: 999;
+    top: 50px;
+    left: 215px;
+    height: auto;
+}
+.frame-2{
+    position: absolute;
+    z-index: 999;
+    top: 330px;
+    left: 240px;
+}
+.frame-3{
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    left: 600px;
+}
+.frame-4{
+    position: absolute;
+    z-index: 999;
+    top: -100px;
+    left: 260px;
+}
+
+/* HOME END */
+
+/* SERVICES START */
+.services {
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: flex-start;
+    background-image: url(images/kletka.png);
+
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    margin: 30px 30px;
+}
+
+.services-text {
+    display: block;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.services-heading {
+    color: #41E8FD;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 30px;
+}
+
+.services-title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 66px;
+    margin-bottom: 60px;
+}
+
+.services-description {
+    width: 650px;
+    font-size: 20px;
+}
+
+.services-images {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.services-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frame-5{
+    position: absolute;
+    z-index: 0;
+    top: 1250px;
+    left: 970px;
+}
+
+.frame-6{
+    position: absolute;
+    z-index: 0;
+    top: 1050px;
+    left: 970px;
+}
+
+/* SERVICES END */
+
+/* CARDS START */
+
+.cards {
+    background-color: #F5F5F5;
+    margin-top: -40px;
+    padding: 0 60px 30px; /* Add padding to both left and right */
+}
+
+.cards-holder {
+    display: flex;
+    justify-content: space-between;
+    /*    gap: 20px; */
+}
+
+.card {
+    background-color: #FFFFFF;
+    flex-basis: calc(25% - 20px); /* Adjust for four cards with equal spacing */
+    border-radius: 15px; /* Adds round corners */
+    overflow: hidden; /* Keeps content inside rounded corners */
+}
+
+.card-image-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.card-image {
+    padding-top: 31px;
+    justify-content: center;
+    display: flex;
+}
+
+.card-number{
+    margin-top: 30px;
+}
+
+.card-img-1:hover {
+    content: url('icons-x/card-1-hover.png'); /* Replace with the hover image */
+}
+.card-img-2:hover {
+    content: url('icons-x/card-2-hover.png'); /* Replace with the hover image */
+}
+.card-img-3:hover {
+    content: url('icons-x/card-3-hover.png'); /* Replace with the hover image */
+}
+.card-img-4:hover {
+    content: url('icons-x/card-4-hover.png'); /* Replace with the hover image */
+}
+
+.card-title {
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card-desc {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    margin: 30px 40px 30px 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1A1C21;
+    margin-left: 30px;
+}
+
+
+
+/* WE ARE MORE START */
+
+.we-are-more-holder{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.we-are-more-title{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 66px;
+    max-width: 43%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.we-are-more-title span {
+    background: linear-gradient(259.94deg, #41E8FD 4.55%, #41BDFD 82%);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+    display: inline-block; /* Required for background-clip to work properly */
+    font-size: inherit; /* Ensure span inherits the same font size */
+}
+
+.we-are-more-desc-btn {
+    max-width: 38%;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.we-are-more-button{
+    margin-top: 20px;
+}
+
+
+
+.we-are-more-holder-images {
+    display: flex;
+    justify-content: space-between; /* Adds space between the images */
+    align-items: center; /* Aligns the images vertically at the center */
+    padding: 0 70px; /* Optional: Adds some padding inside the container */
+}
+
+.candidate-1 img, .candidate-2 img {
+    max-width: 98%; /* Limits the width of each image to 45% of the container */
+    height: auto; /* Maintains the aspect ratio of the images */
+}
+
+
+
+/* WE ARE MORE END */
+
+
+/* CONTACT START */
+.contact{
+    background-color: black;
+
+}
+
+.contact-holder{
+    display: flex;
+    /*    justify-content: space-between*/
+}
+
+.contact-title{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 66px;
+    margin-top: 152px;
+    margin-left: 160px;
+}
+
+
+.social-wrap{
+    display: flex;
+    margin-top: 250px;
+
+}
+.social-text{
+    font-size: 24px;
+    color: #FFFFFF80;
+
+}
+.social-icons{
+    margin-left: 20px;
+}
+
+.contact-title span {
+    background: linear-gradient(259.94deg, #41E8FD 4.55%, #41BDFD 82%);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+    display: inline-block; /* Required for background-clip to work properly */
+    font-size: inherit; /* Ensure span inherits the same font size */
+}
+
+.request-talent-form {
+    /*    margin-top: 152px;*/
+    margin-left: 200px;
+}
+
+.form-title {
+    font-size: 30px;
+    margin-top: 152px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 200px;
+    height: 10px;
+    padding: 25px 40px 20px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+
+}
+
+.icon-company {
+    background-image: url('icons-x/contact-company-icon.png'); /* Add your icon URL */
+}
+
+.icon-email {
+    background-image: url('icons-x/contact-email-icon.png'); /* Add your icon URL */
+}
+
+.icon-phone {
+    background-image: url('icons-x/contact-phone-icon.png'); /* Add your icon URL */
+}
+
+.icon-term {
+    background-image: url('icons-x/contact-term-icon.svg'); /* Add your icon URL */
+}
+
+.form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #FFFFFFB2;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px;
+    /* Adjust size of the radio button */
+    transform: scale(1.2);
+}
+
+.radio-item label {
+    font-size: 14px;
+    color: #FFFFFFB2;
+}
+
+.radio-item input[type="radio"]:focus {
+    outline: 2px solid #4CAF50; /* Add a custom focus style */
+}
+
+
+.form-input-job {
+    width: 500px; /* Adjust the width as needed */
+    height: 100px; /* Increase height for more space to type */
+    padding: 23px 43px; /* Padding inside the textarea */
+    border-radius: 30px; /* Custom border-radius */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* White border with opacity */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color inside the textarea */
+    line-height: 1.5; /* Adjust the line height for better readability */
+    resize: vertical; /* Allows the user to resize vertically */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    overflow-y: auto; /* Allows vertical scrolling if content overflows */
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    resize: none; /* Prevent user from resizing the field */
+}
+
+.form-input-job::-webkit-scrollbar {
+    width: 0; /* Hides scrollbar for WebKit-based browsers */
+}
+
+.icon-job-description {
+    background-image: url('icons-x/contact-company-icon.png'); /* Add your icon URL */
+}
+
+
+.form-input-job::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Placeholder color */
+}
+
+
+
+.submit-btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* CONTACT END */
+
+
+/* TOGGLE */
+
+.toggle-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c2c2c; /* Dark background */
+    border-radius: 30px; /* Rounded container */
+    padding: 5px;
+    width: 270px; /* Adjust as needed */
+}
+
+.toggle-container input[type="radio"] {
+    display: none; /* Hide the radio button */
+}
+
+.toggle-container label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 13px;
+    color: #ffffff80; /* Light text color */
+}
+
+.toggle-container label img {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.toggle-container input[type="radio"]:checked + label {
+    background-color: #4a4a4a; /* Active background color */
+    color: #ffffff; /* Active text color */
+}
+
+.toggle-container label:hover {
+    background-color: #3a3a3a; /* Hover effect */
+}
+
+/* TOGGLE END */
+
+
+/* FOOTER START */
+
+.footer-holder{
+    margin-top: 50px;
+    margin-left: 155px;
+    display: flex;
+}
+
+.address{
+    display: block;
+}
+
+.footer-address{
+    margin-left: 550px;
+    display: flex;
+}
+
+.footer-email-address{
+    color: #1A1C21;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.footer-address-address{
+    color: #1A1C21;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 2px;
+}
+
+.copyright-cookies{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookies{
+    display: flex;
+}
+
+.copyright{
+    margin-left: 155px;
+}
+
+.cookie{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.cookie a{
+    text-decoration: none;
+    color: #41E6FD
+}
+
+
+/* FOOTER END */
+
+/*
+@media (max-width: 1500px) {
+.talent-2 {
+display: none;
+left: 240px;
+}
+
+.frame-1 {
+top: -30px;
+}
+
+.frame-2 {
+top: 280px;
+left: 80px;
+}
+
+
+.frame-3 {
+display: none;
+}
+
+.frame-4 {
+top: -137px;
+left: 230px;
+}
+
+}
+*/
+
+
+@media (max-width: 440px) {
+    
+    .rectangle{
+        display: none;
+    }
+
+    .nav {
+        display: none; /* Hide navigation on mobile screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100px; /* Adjust according to your header height */
+        left: 0;
+        right: 0;
+        background-color: white;
+        text-align: center;
+        padding: 60px;
+        z-index: 100;
+        opacity: 0; /* Ensure it's fully hidden */
+        transition: opacity 0.3s ease; /* Smooth transition */
+        height: 100vh; 
+    }
+
+    /* When the menu is 'open', show it */
+    .nav.open {
+        display: flex;
+        opacity: 1; /* Fade in */
+
+    }
+
+    /* Increase size of menu items when the menu is open */
+    .nav.open .nav-item {
+        font-size: 2rem; /* Make the text bigger */
+        padding: 20px 0; /* Add extra spacing between the items */
+        transition: font-size 0.3s ease, padding 0.3s ease; /* Smooth transition */
+    }
+
+    .burger, .cross {
+        display: block;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    /* Prevent body from scrolling when the menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .talent-3,
+    .frame-4,
+    .frame-1,
+    .frame-2,
+    .frame-3,
+    .talent-2,
+    .frame-6,
+    .frame-5{
+        display: none;
+    }
+
+    .home-holder{
+        display: block;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .title{
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 45.6px;
+        margin-bottom: 16px;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.2px;
+    }
+
+    .talents-holder{
+        display: none;
+    }
+
+    .talents-holder-mobile {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-image: url(images/kletka.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .talent-1{
+        position:static;
+        /*        max-width: 100%; */
+
+    }
+
+
+    /* SERVICES START */
+    .services {
+        background-color: #F5F5F5;
+        display: block;
+        align-items: center;
+
+    }
+
+    .services-container {
+        display: block;
+        /*        justify-content: space-between; */
+        /*        width: 100%;*/
+        margin: 0px 30px;
+    }
+
+    .services-text {
+        /*        display: block;*/
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .services-heading {
+        color: #41E8FD;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .services-title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        margin-bottom: 0px;
+    }
+
+    .services-description {
+        width: auto;
+        font-size: 14px;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+
+    .services-images {
+        width: 306px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .services-image img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+
+    /* SERVICES END */
+
+    /* CARDS START */
+
+    .cards {
+        background-color: #F5F5F5;
+        margin-top: -40px;
+        padding: 40px 10px 10px 10px; /* Add padding to both left and right */
+        overflow-x: hidden; /* Prevents overflow */
+    }
+
+    .cards-holder {
+        display: flex;
+        flex-direction: row; /* Keep cards in a row */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Optional for smoother scrolling */
+    }
+
+    .card {
+        background-color: #FFFFFF;
+        flex: 0 0 250px; /* Set a fixed width for each card */
+        margin-right: 20px; /* Space between cards */
+        border-radius: 15px; /* Adds round corners */
+        overflow: hidden; /* Keeps content inside rounded corners */
+        scroll-snap-align: start; /* Optional for snap effect */
+    }
+
+    .card-image-number {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .card-image {
+        padding-top: 31px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .card-number {
+        margin-top: 30px;
+    }
+
+    /* Hover effects */
+    .card-img-1:hover {
+        content: url('icons-x/card-1-hover.png'); /* Replace with the hover image */
+    }
+
+    .card-img-2:hover {
+        content: url('icons-x/card-2-hover.png'); /* Replace with the hover image */
+    }
+
+    .card-img-3:hover {
+        content: url('icons-x/card-3-hover.png'); /* Replace with the hover image */
+    }
+
+    .card-img-4:hover {
+        content: url('icons-x/card-4-hover.png'); /* Replace with the hover image */
+    }
+
+    .card-title {
+        padding-top: 20px;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .card-desc {
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        margin: 30px 40px 30px 40px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1A1C21;
+        margin-left: 30px;
+    }
+
+
+    /* CARDS END */
+
+    .we-are-more-holder{
+        display: block;
+        /*        justify-content: center;*/
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .we-are-more-title{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        max-width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .we-are-more-title span {
+        background: linear-gradient(259.94deg, #41E8FD 4.55%, #41BDFD 82%);
+        -webkit-background-clip: text; /* Clip the background to the text */
+        -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+        display: inline-block; /* Required for background-clip to work properly */
+        font-size: inherit; /* Ensure span inherits the same font size */
+    }
+
+    .we-are-more-desc-btn {
+        max-width: 100%;
+        margin-right: 30px;
+        margin-top: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .we-are-more-button{
+        margin-top: 20px;
+    }
+
+
+
+    .we-are-more-holder-images {
+        display: flex; /* Use flexbox for horizontal layout */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        white-space: nowrap; /* Prevents the flex items from wrapping */
+        padding: 0 0px; /* Optional: Adjust padding for mobile view */
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .candidate-1, .candidate-2 {
+        flex: 0 0 auto; /* Prevent flex items from shrinking */
+        margin-right: 10px; /* Optional: Adjust spacing between images */
+    }
+
+    .candidate-1 img, .candidate-2 img {
+        max-width: 100%; /* Limits the width of each image to the parent container */
+        height: 356px; /* Maintains the aspect ratio of the images */
+    }
+
+    /* CONTACT START */
+    .contact-holder{
+        display: block;
+        /*    justify-content: space-between*/
+    }
+
+    .contact-title{
+        color: white;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 30px;
+    }
+
+
+    .social-wrap{
+        display: flex;
+        margin-top: 24px;
+
+    }
+    .social-text{
+        font-size: 16px;
+        color: #FFFFFF80;
+
+    }
+    .social-icons{
+        margin-left: 20px;
+    }
+
+    .contact-title span {
+        background: linear-gradient(259.94deg, #41E8FD 4.55%, #41BDFD 82%);
+        -webkit-background-clip: text; /* Clip the background to the text */
+        -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+        display: inline-block; /* Required for background-clip to work properly */
+        font-size: inherit; /* Ensure span inherits the same font size */
+    }
+
+
+    .request-talent-form {
+        margin: 0 auto; /* Center the form */
+        padding: 20px; /* Add some padding */
+        max-width: 100%; /* Make the form container stretch to full screen width */
+    }
+
+    .form-title {
+        font-size: 24px;
+        margin-top: 64px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .form-row {
+        display: flex; /* Use flexbox to align inputs in a row */
+        justify-content: space-between; /* Add space between inputs */
+        flex-wrap: wrap; /* Ensure inputs wrap on smaller screens */
+        margin-bottom: 8px; /* Add space between rows */
+        gap: 20px; /* Optional: Add gap between elements */
+    }
+
+    .form-input {
+        flex: 1; /* Make inputs stretch to fill available space */
+        min-width: 200px; /* Ensure a minimum width */
+        height: 30px; /* Adjust height */
+        padding: 15px 20px; /* Adjust padding */
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .icon-company,
+    .icon-email,
+    .icon-phone,
+    .icon-term
+    {
+        padding-left: 40px;
+    }
+
+    .toggle-container{
+        margin-bottom: 8px;
+    }
+
+
+    .form-input-job {
+        flex: 1;
+        height: 150px; /* Increase textarea height */
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        color: white;
+    }
+
+    .form-input-job::-webkit-scrollbar {
+        width: 0; /* Hides scrollbar for WebKit-based browsers */
+    }
+
+    .icon-job-description {
+        padding-left: 40px;
+    }
+
+    .icon-job-description::placeholder {
+        padding-top: 9px; /* Adds top padding for vertical alignment */
+    }
+
+
+    .form-input-job::placeholder {
+        color: rgba(255, 255, 255, 0.5); /* Placeholder color */
+    }
+
+    .submit-btn {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* CONTACT END */
+
+
+    /* FOOTER START */
+
+    .footer-holder{
+        margin-top: 40px;
+        margin-left: 16px;
+        display: block;
+    }
+
+    .address{
+        margin-top: 40px;
+        display: block;
+    }
+
+    .footer-address{
+        margin-left: 0px;
+        display: flex;
+
+    }
+
+    .footer-email-address{
+        color: #1A1C21;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .footer-address-address{
+        color: #1A1C21;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 2px;
+    }
+
+    .copyright-cookies{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cookies{
+        display: block;
+    }
+
+    .copyright{
+        margin-left: 0px;
+    }
+
+    .cookie{
+        margin-right: 0px;
+        text-decoration: none;
+    }
+
+    .cookie a{
+        text-decoration: none;
+        color: #41E6FD
+    }
+
+    /* FOOTER END */
+
+
+}
